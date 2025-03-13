@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+
+<div class="post-container">
+    <h1><%= title %></h1>
+    
+    <!-- Display the title image -->
+    <% if (titleImage) { %>
+        <img src="<%= titleImage %>" alt="Title Image" class="title-image" style="display: block; margin: auto; max-width: 100%; height: auto;" />
+    <% } %>
+
+    <!-- Display the date -->
+    <% if (date) { %>
+        <p class="post-date">Date: <%= new Date(date).toLocaleDateString() %></p>
+    <% } else { %>
+        <p class="post-date">Date: Not available</p>
+    <% } %>
+
+    <!-- Display the first paragraph -->
+    <% if (paragraph1) { %>
+        <p><%= paragraph1 %></p>
+    <% } %>
+
+    <!-- Display the second paragraph -->
+    <% if (paragraph2) { %>
+        <p><%= paragraph2 %></p>
+    <% } %>
+</div>
+
+<%- include("partials/footer"); -%>

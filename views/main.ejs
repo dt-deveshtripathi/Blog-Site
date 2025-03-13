@@ -1,0 +1,23 @@
+<!-- main.ejs -->
+<%- include("partials/header"); -%>
+    <div class="about">
+        <p>LATEST</p>
+    </div>
+    <div class="content">
+        <% mainShow.forEach(function(post) { %>
+            <a href="/posts/<%= encodeURIComponent(post.title) %>" class="post">
+                <div class="blog">
+                    <!-- Use the blogpic class to control image size -->
+                    <img src="<%= post.titleImage %>" alt="Blog Image" class="blogpic">
+                    <h3 class="date">
+                        <%= new Date(post.date).toLocaleDateString() %>
+                    </h3>
+                    <h3>
+                        <%= post.title %>
+                    </h3>
+                </div>
+            </a>
+            <% }) %>
+    </div>
+
+    <%- include("partials/footer"); -%>

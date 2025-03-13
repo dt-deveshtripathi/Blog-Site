@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+    <div class="compose-container">
+        <h1>Compose a New Blog Post</h1>
+        <form action="/submit-blog" method="POST">
+            <div>
+                <label for="title">Title:</label>
+                <input id="title" name="title" type="text" required />
+            </div>
+            <div>
+                <label for="titleImage">Title Image URL:</label>
+                <input id="titleImage" name="titleImage" type="text" />
+            </div>
+            <div>
+                <label for="paragraph1">First Paragraph:</label>
+                <textarea id="paragraph1" name="paragraph1" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="paragraph2">Second Paragraph:</label>
+                <textarea id="paragraph2" name="paragraph2" rows="5"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <%- include("partials/footer"); -%>
