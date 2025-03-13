@@ -1,0 +1,424 @@
+body {
+  background-color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navb {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  padding: 5;
+}
+
+.lefttop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.lefttop h1 {
+  margin: 0;
+  margin-left: 3%;
+}
+
+.navitems {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+.iconimg {
+  height: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  color: white;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.redirects {
+  margin: 26.5px;
+  color: white;
+}
+
+.line {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  width: 10%;
+}
+
+p {
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 3%;
+}
+
+@media (max-width: 919px) {
+  .navb {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logoname {
+    display: flex;
+  }
+
+  .logoname h1 {
+    margin: 0;
+    margin-left: 3%;
+    font-size: 25px;
+  }
+
+  .iconimg {
+    height: 60px;
+  }
+
+  .navitems {
+    margin: 0;
+    margin-bottom: 2%;
+    height: 30px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navitems h2 {
+    font-size: 20px;
+  }
+
+  .topline {
+    margin-top: 130px;
+  }
+
+  .redirects {
+    margin: 0;
+  }
+}
+
+.redirects:hover {
+  color: red;
+  transition: color 0.3s;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100%;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post .blog {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.post .blog .blogpic {
+  width: 100%;
+  margin: 5% 0 0 0;
+}
+
+
+.post:hover {
+  background-color: rgb(255, 0, 0);
+  transform: translateY(2%);
+  transition: background-color, transform 1s;
+  border-radius: 5%;
+}
+
+
+@media (min-width: 920px) and (max-width: 1399px) {
+  .content {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+.blogs {
+  margin: 20px;
+  padding: 0.5%;
+}
+
+.blogs:hover {
+  background-color: #ff0000;
+}
+
+.blogs .blogpic {
+  margin: 0.5%;
+}
+
+.blogs>h3 {
+  margin: 0%;
+}
+
+.date {
+  margin: 0;
+}
+
+.me {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.mypic {
+  height: 700px;
+  width: 300px;
+
+}
+
+.desc {
+  width: 40%;
+  color: white;
+  margin-left: 40px;
+  padding-top: 30px;
+}
+
+.myphoto {
+  height: 100%;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin: 50px 0px;
+}
+
+.left {
+  height: 600px;
+  width: 25%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftdesc {
+  color: white;
+
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.right {
+  height: 600px;
+  width: 40%;
+  background-color: rgb(34, 32, 32);
+  margin-left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width:1000px) {
+  .me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desc {
+    width: 90%;
+    font-size: 10px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width:810px) {
+
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 80%;
+  }
+
+  .leftdesc {
+    width: 80%;
+  }
+
+  .right {
+    width: 80%;
+    margin: 0;
+  }
+
+  .left {
+    height: 400px;
+  }
+}
+
+.contact-details {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid: 30% 30% 40%/ 50% 50%;
+  grid-column-gap: 3%
+}
+
+.three {
+  grid-column: 1/3;
+
+}
+
+.four {
+  grid-column: 1/3;
+}
+
+.contact-details>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-details input,
+textarea {
+  background-color: rgb(34, 32, 32);
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.contact-details input:hover,
+textarea:hover {
+  border-color: red;
+}
+
+h3 {
+  color: white;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.fa-brands {
+  margin: 0px 10px;
+}
+
+.endtext {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands:hover {
+  color: red;
+  transition: color 0.3s;
+}
+
+.allposts {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.packing {
+  width: 80%;
+}
+
+.compose-container label {
+  color: white;
+  /* White color for good contrast against black background */
+  font-size: 18px;
+  /* Slightly larger font size */
+  margin-bottom: 10px;
+  /* Space between label and input/textarea */
+  display: block;
+  /* Make sure the label is on a new line */
+  font-weight: bold;
+  /* Make the label text bold for emphasis */
+}
+
+.compose-container input,
+.compose-container textarea {
+  width: 80%;
+  /* Make input and textarea fields full-width */
+  padding: 10px;
+  /* Add padding inside input and textarea fields */
+  background-color: #222;
+  /* Darker background for input and textarea */
+  color: white;
+  /* White text color inside input and textarea */
+  border: 1px solid white;
+  /* White border for input and textarea */
+  margin-bottom: 20px;
+  /* Space between input/textarea and the next element */
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+.compose-container button {
+  background-color: #ff4500;
+  /* Orange background for the button */
+  color: white;
+  /* White text color for the button */
+  padding: 10px 20px;
+  /* Padding for the button */
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  font-size: 18px;
+  /* Slightly larger font size for the button */
+}
+
+.compose-container button:hover {
+  background-color: #ff6347;
+  /* Lighter orange on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth transition effect */
+}
+
+/* Target only images within .page-content */
+.page-content .blogpic {
+  width: 100px;
+  /* Set the width to 100px */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Ensures the image displays as a block element */
+
+}
