@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/public"));
 
 // Session setup
 app.use(session({
-  secret: 'ANISH', // Replace with a real secret key
+  secret: 'DEVESH', // Replace with a real secret key
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({ mongoUrl: 'mongodb+srv://username:password@cluster0.pwcrxk3.mongodb.net/oneforall' }) // Replace with your MongoDB URL
