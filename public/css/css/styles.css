@@ -192,9 +192,7 @@ p {
 .mypic {
   height: 360px;
   width: 360px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
+  
 }
 
 .desc {
@@ -207,6 +205,7 @@ p {
 .myphoto {
   height: 100%;
   width: 100%;
+  border-radius:10%;
 }
 
 .contact {
